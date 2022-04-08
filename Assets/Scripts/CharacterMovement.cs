@@ -5,11 +5,11 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     public float speed = 0.5f;
-    private CharacterController characterController;
+    private CharacterInputController characterController;
 
     private void Awake()
     {
-        characterController = GetComponent<CharacterController>();
+        characterController = GetComponent<CharacterInputController>();
     }
 
     private void Update()

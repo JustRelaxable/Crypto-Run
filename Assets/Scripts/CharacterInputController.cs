@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class CharacterInputController : MonoBehaviour
 {
     public float DeltaTouch { get => deltaTouch; }
     private float deltaTouch = 0f;

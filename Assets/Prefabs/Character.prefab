@@ -2409,6 +2409,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3704666644136499035, guid: 359f0bcb46333254bb85943dd7191458, type: 3}
+      propertyPath: m_TagString
+      value: MainCoin
+      objectReference: {fileID: 0}
     - target: {fileID: 3762075072262438098, guid: 359f0bcb46333254bb85943dd7191458, type: 3}
       propertyPath: m_RootOrder
       value: 2

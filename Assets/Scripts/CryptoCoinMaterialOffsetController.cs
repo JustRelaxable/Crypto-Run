@@ -19,6 +19,6 @@ public class CryptoCoinMaterialOffsetController : MonoBehaviour
 
     private void UpdateCoinUV()
     {
-        meshRenderer.material.SetTextureOffset("_BaseMap", new Vector2(0.12f*(cryptoIndex%8),-0.16f*(cryptoIndex/8)));
+        meshRenderer.material.SetTextureOffset("_MainTex", new Vector2(0.12f*(cryptoIndex%8),-0.16f*(cryptoIndex/8)));
     }
 }

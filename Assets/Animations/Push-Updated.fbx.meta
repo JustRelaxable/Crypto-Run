@@ -9,6 +9,9 @@ ModelImporter:
   - first:
       74: 6165553400957861818
     second: Armature|Armature|mixamo.com|Layer0.001
+  - first:
+      74: -2770633014923885492
+    second: Armature|Armature|mixamo.com|Layer0.001 (1)
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -41,11 +44,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Armature|mixamo.com|Layer0
-      takeName: Armature|Armature|mixamo.com|Layer0
+      name: Armature|Armature|mixamo.com|Layer0.001 (1)
+      takeName: Armature|Armature|mixamo.com|Layer0.001
       internalID: 0
-      firstFrame: 0
-      lastFrame: 69
+      firstFrame: 24
+      lastFrame: 199
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -81,11 +84,11 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0

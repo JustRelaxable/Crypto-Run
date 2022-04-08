@@ -20,8 +20,11 @@ public class CharacterController : MonoBehaviour
             deltaTouch += (Input.mousePosition - touchPosition).x*Time.deltaTime/10;
             touchPosition = Input.mousePosition;
         }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            //deltaTouch = 0;
+        }
         deltaTouch = Mathf.Clamp(deltaTouch, -1f, 1f);
-        //deltaTouch = Mathf.Lerp(deltaTouch, 0, Time.deltaTime);
-        //Debug.Log(deltaTouch);
+        Debug.Log(deltaTouch);
     }
 }

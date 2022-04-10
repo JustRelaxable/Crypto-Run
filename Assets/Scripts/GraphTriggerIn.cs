@@ -23,7 +23,7 @@ public class GraphTriggerIn : GraphTrigger
     protected override void OnTriggerEnter(Collider other)
     {
         base.OnTriggerEnter(other);
-        if (other.CompareTag("MainCoin"))
+        if (other.CompareTag("Player"))
         {
             upLogo.sprite = GetLogo(leftDoor);
             downLogo.sprite = GetLogo(rightDoor);

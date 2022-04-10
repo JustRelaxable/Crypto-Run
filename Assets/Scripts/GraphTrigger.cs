@@ -14,7 +14,7 @@ public class GraphTrigger : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("MainCoin"))
+        if (other.CompareTag("Player"))
         {
             if (graphIn)
                 graphAnimator.SetTrigger("GraphIn");

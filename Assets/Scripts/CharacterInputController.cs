@@ -26,6 +26,5 @@ public class CharacterInputController : MonoBehaviour
             //deltaTouch = 0;
         }
         deltaTouch = Mathf.Clamp(deltaTouch, -1f, 1f);
-        Debug.Log(deltaTouch);
     }
 }

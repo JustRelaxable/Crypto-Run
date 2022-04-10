@@ -10,10 +10,6 @@ public class CryptoImageSO : ScriptableObject
     private Dictionary<CryptoType, Sprite> keyPair;
     private void Awake()
     {
-        foreach (var item in cryptoImageDictionary)
-        {
-            keyPair.Add(item.cryptoType, item.cryptoImage);
-        }
     }
 
     public Sprite GetLogo(CryptoType cryptoType)

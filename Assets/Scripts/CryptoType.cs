@@ -1,4 +1,4 @@
 public enum CryptoType
 {
-    Bitcoin,Ethereum
+    Bitcoin=3,Ethereum=14
 }

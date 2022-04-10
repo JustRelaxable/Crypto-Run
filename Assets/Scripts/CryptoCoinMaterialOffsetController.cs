@@ -6,7 +6,7 @@ public class CryptoCoinMaterialOffsetController : MonoBehaviour
 {
     [SerializeField]
     [Range(0,43)]
-    int cryptoIndex;
+    public int cryptoIndex;
 
     [SerializeField] MeshRenderer meshRenderer;
     

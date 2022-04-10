@@ -9,6 +9,7 @@ TagManager:
   - GraphUpLogo
   - GraphDownLogo
   - Graph
+  - Door
   layers:
   - Default
   - TransparentFX

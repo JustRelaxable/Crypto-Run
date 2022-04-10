@@ -18,5 +18,10 @@ public class CharacterTriggerController : MonoBehaviour
             other.transform.DOLocalMove(stackingPosition, 1f);
             other.transform.DOLocalRotate(stackingRotation, 1f);
         }
+
+        else if (other.CompareTag("Door"))
+        {
+            characterStackingPoint.ChangeCoins(CryptoType.Ethereum);
+        }
     }
 }

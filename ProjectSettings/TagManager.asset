@@ -10,6 +10,8 @@ TagManager:
   - GraphDownLogo
   - Graph
   - Door
+  - UpLineRenderer
+  - DownLineRenderer
   layers:
   - Default
   - TransparentFX

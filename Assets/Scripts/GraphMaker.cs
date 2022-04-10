@@ -16,9 +16,16 @@ public class GraphMaker : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
     }
 
-    private void Start()
+    public void DrawGraph(Color color)
     {
-        float intervalX = (maxX - minX)/lineRenderer.positionCount;
+        StartCoroutine(DrawGraphCoroutine(GeneratePositions(color)));
+    }
+
+    public Vector3[] GeneratePositions(Color color)
+    {
+        lineRenderer.endColor = color;
+        lineRenderer.startColor = color;
+        float intervalX = (maxX - minX) / lineRenderer.positionCount;
         Vector3[] positionArray = new Vector3[15];
         for (int i = 0; i < lineRenderer.positionCount; i++)
         {
@@ -27,17 +34,11 @@ public class GraphMaker : MonoBehaviour
         }
         for (int i = 0; i < lineRenderer.positionCount; i++)
         {
-            positionArray[i].y = Random.Range(minY,maxY);
+            positionArray[i].y = Random.Range(minY, maxY);
             positionArray[i].z = 0;
         }
-        //lineRenderer.SetPositions(positionArray);
-        /*
-        for (int i = 0; i < positionArray.Length; i++)
-        {
-            lineRenderer.SetPosition(i, positionArray[i]);
-        }
-        */
-        StartCoroutine(DrawGraphCoroutine(positionArray));
+
+        return positionArray;
     }
 
     IEnumerator DrawGraphCoroutine(Vector3[] points)

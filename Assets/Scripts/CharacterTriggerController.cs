@@ -21,7 +21,7 @@ public class CharacterTriggerController : MonoBehaviour
 
         else if (other.CompareTag("Door"))
         {
-            characterStackingPoint.ChangeCoins(CryptoType.Ethereum);
+            characterStackingPoint.ChangeCoins(other.GetComponent<Door>().cryptoType);
         }
     }
 }

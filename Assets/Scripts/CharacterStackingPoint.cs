@@ -43,4 +43,25 @@ public class CharacterStackingPoint : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
     }
+
+    public void DestroyCoins(int number)
+    {
+        int[] removeArray = new int[number];
+        for (int i = 0; i < removeArray.Length; i++)
+        {
+            removeArray[i] = coinsMeshRenderers.Count - 1 - i;
+        }
+        for (int i = 0; i < removeArray.Length; i++)
+        {
+            cryptoCoinMaterialOffsetControllers[removeArray[i]].transform.DOScale(0f, 0.5f);
+        }
+        for (int i = 0; i < removeArray.Length; i++)
+        {
+            cryptoCoinMaterialOffsetControllers.RemoveAt(removeArray[i]);
+        }
+        for (int i = 0; i < removeArray.Length; i++)
+        {
+            coinsMeshRenderers.RemoveAt(removeArray[i]);
+        }
+    }
 }

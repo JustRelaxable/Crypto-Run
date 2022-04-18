@@ -46,6 +46,10 @@ public class CharacterStackingPoint : MonoBehaviour
 
     public void DestroyCoins(int number)
     {
+        if(cryptoCoinMaterialOffsetControllers.Count < number)
+        {
+            number = cryptoCoinMaterialOffsetControllers.Count;
+        }
         int[] removeArray = new int[number];
         for (int i = 0; i < removeArray.Length; i++)
         {
@@ -63,5 +67,10 @@ public class CharacterStackingPoint : MonoBehaviour
         {
             coinsMeshRenderers.RemoveAt(removeArray[i]);
         }
+    }
+
+    public int GetCoinCount()
+    {
+        return coinsMeshRenderers.Count;
     }
 }

@@ -5,6 +5,13 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public CryptoType cryptoType;
+    protected GroupCoinMaterialController groupCoinMaterialController;
+
+    private void Awake()
+    {
+        groupCoinMaterialController = FindObjectOfType<GroupCoinMaterialController>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -14,6 +21,6 @@ public class Door : MonoBehaviour
     }
     protected virtual void OnTriggerPlayer(Collider playerCollider)
     {
-
+        groupCoinMaterialController.ChangeMaterial(cryptoType);
     }
 }

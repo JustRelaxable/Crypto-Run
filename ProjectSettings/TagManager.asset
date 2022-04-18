@@ -12,6 +12,9 @@ TagManager:
   - Door
   - UpLineRenderer
   - DownLineRenderer
+  - GroupCoin
+  - UpIcon
+  - DownIcon
   layers:
   - Default
   - TransparentFX

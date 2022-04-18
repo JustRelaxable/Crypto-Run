@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class GraphMaker : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class GraphMaker : MonoBehaviour
     [SerializeField] float maxX;
     [SerializeField] float minY;
     [SerializeField] float maxY;
+    [SerializeField] Image iconImage;
+
+    [SerializeField] Sprite up;
+    [SerializeField] Sprite down;
 
     private void Awake()
     {
@@ -23,6 +28,11 @@ public class GraphMaker : MonoBehaviour
 
     public Vector3[] GeneratePositions(Color color)
     {
+        if (color == Color.green)
+            iconImage.sprite = up;
+        else
+            iconImage.sprite = down;
+
         lineRenderer.endColor = color;
         lineRenderer.startColor = color;
         float intervalX = (maxX - minX) / lineRenderer.positionCount;

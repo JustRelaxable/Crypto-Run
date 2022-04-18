@@ -9,6 +9,6 @@ public class DoorFalse : Door
         base.OnTriggerPlayer(playerCollider);
         Debug.Log("False");
         CharacterStackingPoint characterStackingPoint = playerCollider.GetComponentInChildren<CharacterStackingPoint>();
-        characterStackingPoint.DestroyCoins(2);
+        characterStackingPoint.DestroyCoins(Random.RandomRange(4,10));
     }
 }
